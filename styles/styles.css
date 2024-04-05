@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    /*color: green;*/
+    font-family: monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    cursor: url('../assets/defaultcursor.png'), auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+h1{
+    color: white;
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+ p {
+    color: white;
+    font-size: 1.4em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+button {
+}
+
+button:hover {
+    cursor: url('../assets/watchingcursor.png'), auto;
+}
+
+a:hover{
+    cursor: url('../assets/watchingcursor.png'), auto;
+}
+
+.emailbutton{
+    cursor: url('../assets/emailcursor.png')
+}
+
+.centreimgtop {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#player {
+    display: none;
+}

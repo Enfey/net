@@ -1,2 +1,2 @@
 const audioPlayer = document.getElementById('player');
-audioPlayer.volume = 0.08;
+audioPlayer.volume = 0.00;

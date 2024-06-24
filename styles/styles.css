@@ -1,19 +1,20 @@
 body {
-    background-color: black;
-    /*color: green;*/
-    font-family: monospace;
+    background-color: #ffffff; 
+    font-family: 'Latin Modern', serif; /*used to be monospace*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     cursor: url('../assets/defaultcursor.png'), auto;
+    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin: 0;
 }
 
 nav ul {
@@ -24,62 +25,55 @@ nav ul {
 
 nav li {
     font-size: 1.4em;
+    font-weight: bold;
     display: inline-block;
     margin-right: 20px;
 }
 
 nav a {
-    color: white;
+    color: #5c5c5c;
     text-decoration: none;
-}
-
-main {
     padding: 20px;
-    margin-top: 50px;
 }
 
 footer {
-    background-color: black;
-    color: white;
     padding: 10px;
+    font-size: 1.4em;
     text-align: center;
     margin-top: auto;
 }
 
 h1{
-    color: white;
+    color: #5c5c5c;
     font-size: 2em;
     margin: 20px 0;
     text-align: center;
 }
 
-p, figcaption{
-    color: white;
-    font-size: 1.2em;
+h2{
+    color: #5c5c5c;
+    font-size: 1.6em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+p, figcaption {
+    color: #5c5c5c;
+    font-size: 1.4em;
     margin: 10px 0;
     text-align: center;
 }
 
-button {
-}
-
-button:hover {
-    cursor: url('../assets/watchingcursor.png'), auto;
+a {
+    color:#5c5c5c;
+    font-size: 1.5em;
 }
 
 a:hover{
     cursor: url('../assets/watchingcursor.png'), auto;
-}
-
-.emailbutton{
-    cursor: url('../assets/emailcursor.png')
-}
-
-.centreimgtop {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    transform: translateZ(20px);
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 #player {
@@ -87,12 +81,12 @@ a:hover{
 }
 
 img, video{
+    
     max-width: 100%;
     height: auto;
 }
 
 .post-preview {
-    /* Add your styles here */
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -106,19 +100,158 @@ img, video{
     flex-direction: column;
     margin-top: 20px;
   }
-  
-  .img-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
+
+    li {
+        font-size: 1.2em;
+    }
+
+    .centreimgtop {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    button {
+        background-color: #5c5c5c;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        align-self: center;
+    }
+
+    button:hover {
+
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transform: translateZ(20px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    footer a, footer p {
+        font-size: 1em;
+    }
+
+
+
+
+
+    
+
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .form-group {
+        margin-bottom: 15px;
+        width: 80%;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-size: 1.4em;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      
+      textarea {
+        resize: vertical;
+      }
+      
+      .submit-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      
+      .submit-button:hover {
+        background-color: #555;
+        transform: translateY(-5px);
+      }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+   .post-container {
+        margin-top: 490px; /*used to be 440, and main had a margin-top of 50px and 20px padding*/
+        position: relative;
+        text-align: center;
+   }
+
+   
+  
 
   .section {
     width: 66%;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 30px;
     box-sizing: border-box;
     line-height: 1.5;
+    text-align: center;
   }
 
   .section img {
@@ -127,3 +260,93 @@ img, video{
     display: block;
     margin: 20px auto;
   }
+
+  .sample-container {
+    display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px; /* Optional: adds space between grid items */
+
+  }
+
+    .sample-container img {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .sample-container a {
+        padding: none;
+    }
+
+    .sample-container img:hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transform: translateZ(20px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .sample-container, .item a {
+        text-align: center;
+    }
+
+
+  @media (max-width: 1200px) {
+    .centreimgtop {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        margin-top: 10px;
+    }
+
+    .post-container {
+        margin-top: auto;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+    .sample-container img {
+        max-width: 100%;
+    }
+
+    
+
+}
+
+    @media (max-width: 500px){
+        .sample-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+
+    
+  

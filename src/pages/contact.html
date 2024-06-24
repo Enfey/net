@@ -6,24 +6,43 @@
     <title>Contact</title>
     <link rel="stylesheet" href="../../styles/styles.css">
     <script defer src="../keybind.js""></script>
+    <script defer src="../contact.js"></script>
 </head>
 <body>
         <header>
             <nav class="left-nav">
                 <ul>
-                    <li><a href="sonic_explorations.html">Sonic Exploration</a></li>
-                    <li><a href="literature.html">Literature</a></li>
+                    <li><a href="sonic_explorations/sonic_explorations.html">Sonic Exploration</a></li>
+                    <li><a href="blog/blog.html">Blog</a></li>
                 </ul>
             </nav>
             <nav class="right-nav">
                 <ul>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="literature/literature.html">Literature</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
     <main>
-        
+        <div class="section">
+            <h1>Contact</h1>
+        </div>
+        <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
     </main>
     
     <footer>

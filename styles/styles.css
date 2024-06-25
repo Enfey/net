@@ -34,6 +34,7 @@ nav a {
     color: #5c5c5c;
     text-decoration: none;
     padding: 20px;
+    font-size: 1.5em;
 }
 
 footer {
@@ -57,17 +58,18 @@ h2{
     text-align: center;
 }
 
-p, figcaption {
+
+
+p, figcaption, a {
     color: #5c5c5c;
     font-size: 1.4em;
     margin: 10px 0;
     text-align: center;
 }
 
-a {
-    color:#5c5c5c;
-    font-size: 1.5em;
-}
+
+
+
 
 a:hover{
     cursor: url('../assets/watchingcursor.png'), auto;
@@ -102,13 +104,13 @@ img, video{
   }
 
   ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
   }
 
     li {
         font-size: 1.2em;
+        list-style-type: none;
     }
 
     .centreimgtop {
@@ -120,18 +122,18 @@ img, video{
     }
 
     button {
-        background-color: #5c5c5c;
-        color: white;
-        padding: 10px 20px;
+        font-size: 1.4em;
+        display: inline-block;
+        padding: 10px 10px;
+        background-color: #333;
+        color: #fff;
         border: none;
         border-radius: 5px;
-        font-size: 1.2em;
         cursor: pointer;
-        align-self: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     button:hover {
-
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         transform: translateZ(20px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -185,56 +187,8 @@ img, video{
         resize: vertical;
       }
       
-      .submit-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
       
-      .submit-button:hover {
-        background-color: #555;
-        transform: translateY(-5px);
-      }
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
 
    .post-container {
         margin-top: 490px; /*used to be 440, and main had a margin-top of 50px and 20px padding*/
@@ -248,10 +202,11 @@ img, video{
   .section {
     width: 66%;
     margin: 0 auto;
-    padding-top: 30px;
+    
     box-sizing: border-box;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 50px;
   }
 
   .section img {
@@ -259,6 +214,10 @@ img, video{
     height: auto;
     display: block;
     margin: 20px auto;
+  }
+
+  .section p a {
+    font-size: 1.4em;
   }
 
   .sample-container {
@@ -327,6 +286,7 @@ img, video{
     }
 
     .section {
+        margin-top:50px;
         width: 90%;
     }
 

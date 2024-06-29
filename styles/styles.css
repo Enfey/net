@@ -200,12 +200,11 @@ img, video{
   
 
   .section {
-    width: 66%;
+    width: 45%;
     margin: 0 auto;
     
     box-sizing: border-box;
     line-height: 1.5;
-    text-align: center;
     margin-bottom: 50px;
   }
 
@@ -217,7 +216,10 @@ img, video{
   }
 
   .section p a {
-    font-size: 1.4em;
+    text-align:left;
+    font-size: 1em;
+    text-decoration: none;
+    color: #ac0b0b;
   }
 
   .sample-container {
@@ -226,6 +228,10 @@ img, video{
             grid-template-rows: repeat(2, 1fr);
             gap: 10px; /* Optional: adds space between grid items */
 
+  }
+  .highlight {
+    background-color: #ac0b0b;
+    transition: background-color 1s ease
   }
 
     .sample-container img {

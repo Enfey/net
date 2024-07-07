@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starless Mire</title>
+    <title>My Sweet Skullflower</title>
     <link rel="stylesheet" href="../../styles/styles.css">
     <script defer src="../../src/keybind.js""></script>
     <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
+  
+  
 </head>
 <body>
         <header>
@@ -32,68 +34,52 @@
             a suit of meaty armour to reify its logical considerations. <br><br>
 
             How beautiful such a thing is, to produce such fine logic closed under extrinsic abstractions, when it is conceived not knowing of such rules.
-            An innately transformative device, in relentless pursuit of knowledge of the immediate world it performs biological augments to become the zenith of its kind.
+            A transformative device, a relentless pursuant of knowledge of the immediate world. A biological whetstone, cyclically eliminating weakness and imperfection.
             Is this not the pinnacle of creation? <br><br>
 
-            Bask in the brilliance of complication ! Though beautiful, the wrinkled material by which our will is writ unto the universe is not flawless.
-            Our skullflowers make dictators of the weak, seed vile corruption in clean purity, and perpetuate ungodly, self-serving dogma. 
-            The totality of misery endured by humans is on its immaterial hands !<br><br>
+            Bask in the brilliance of complication! Though beautiful, the wrinkled material by which our will is writ unto the universe is not flawless.
+            Our skullflowers make dictators of the weak, seed vile corruption in purity, and perpetuate ungodly, self-serving dogma. 
+            The totality of misery endured by humans is on its immaterial hands!<br><br>
 
             I have suffered by it.  Agonising patterns of a recursive disposition, externalised as pangs of obligation, push me deeper into an ocean of 
-            volumetric dejection.  Thus the head is a divergent clump of matter. It is neither wholly imperfect nor perfect, it is bitter and sweet, dirty and pure. 
+            volumetric dejection.  Thus the head is a divergent clump of matter. It is neither wholly imperfect nor perfect; it is bitter and sweet, dirty and pure. 
             I neither drown in the ocean nor rise from it. Fathom the permutations of this discord ! Inescapable, endless limbo is our sublime prize. <br><br>
 
             For such divinity to be at odds with itself is maddening. We shall try to understand this.   <br><br>
-            $$
-            \begin{flalign*}
-            
-            % Sets
-            & \text{Sets:} \\
+            \[
+            \begin{aligned}
+            & \href{https://en.wikipedia.org/wiki/Set_(mathematics)}{\text{Sets:}} \\
             & \mathcal{X}: \text{Set of all possible sensory inputs} \\
             & \mathcal{S}: \text{Set of all possible internal states} \\
             & \mathcal{T}: \text{Set of all possible thoughts} \\
             & \mathcal{A}: \text{Set of all possible actions} \\
             \\
-            % Functions
-            & \text{Functions:}\href{#1}{^\text{1}} \\
-            % Thought generation function T
-            & \text{Thought generation function: } T: \mathcal{X} \times \mathcal{S} \rightarrow \mathcal{T} : \text{ This function is surjective.} \\
-            % Action generation function A
-            & \text{Action generation function: } A: \mathcal{T} \times \mathcal{X} \times \mathcal{S} \rightarrow \mathcal{A} : \text{ This function is bijective.} \\
-            % State transition function S
-            & \text{State transition function: } S: \mathcal{S} \times \mathcal{T} \times \mathcal{A} \rightarrow \mathcal{S} : \text{ This function is bijective.} \\
+            & \href{https://en.wikipedia.org/wiki/Function_(mathematics)}{\text{Functions}}: \\
+            & T: \mathcal{X} \times \mathcal{S} \rightarrow \mathcal{T} \\
+            & A: \mathcal{T} \times \mathcal{X} \times \mathcal{S} \rightarrow \mathcal{A} \\
+             & S: \mathcal{S} \times \mathcal{T} \times \mathcal{A} \rightarrow \mathcal{S} \\
             \\
-            % Equations at Time Step t
-            & \text{At time step } t: \\
-            & \text{Thought Generation: } t_t = T(x_t, s_t) \\
-            &  \text{Action Generation: } a_t = A(t_t, x_t, s_t) \\
-            &  \text{State Transition: } s_{t+1} = S(s_t, t_t, a_t)
-
-            &&
-            \end{flalign*}
-            $$
+            & \href{https://math.libretexts.org/Bookshelves/Scientific_Computing_Simulations_and_Modeling/Introduction_to_the_Modeling_and_Analysis_of_Complex_Systems_(Sayama)/04%3A_DiscreteTime_Models_I__Modeling/401%3A_DiscreteTime_Models_with_Difference_Equations}{\text{At time step } t:} \\
+            & \text{Thought Generation} ^\href{#1}{1} \text{: } t_t = T(x_t, s_t) \\
+            & \text{Action Generation: } a_t = A(t_t, x_t, s_t) \\
+            & \text{State Transition: } s_{t+1} = S(s_t, t_t, a_t) \\ 
+            \\
+            & \text{Properties of functions:} \\
+            & \href{https://en.wikipedia.org/wiki/Surjective_function}{\text{Surjective}} \text{: For every }   t \in \mathcal{T}, \text{ there exists } x \in \mathcal{X} \text{ and } s \in \mathcal{S} \text{ such that } T(x, s) = t \\
+            & \href{https://en.wikipedia.org/wiki/Bijective_function}{\text{Bijective}} \text{: For every }  a \in \mathcal{A}, \text{ there exists } t \in \mathcal{T}, x \in \mathcal{X}, \text{ and } s \in \mathcal{S} \text{ such that } A(t, x, s) = a \\
+            & \href{https://en.wikipedia.org/wiki/Bijective_function}{\text{Bijective}} \text{: For every } s \in \mathcal{S}, \text{ there exists } t \in \mathcal{T}, a \in \mathcal{A} \text{ such that } S(s, t, a) = s' \\
+            \end{aligned}
+            \]
 
             <br><br>
-            Did you get all that? Good. 
+            Did you get all that? Good. <a href="#2">[2]</a>
             <br><br>
-            <!--Unfinished
             
-            Informally, the set of thoughts can be defined as the amalgamation of innate knowings, the assimilation of the seeds of other skullflowers and 
-            local and global extrinsic abstractions, and our delightful dispositions. Its cardinality is infinite; our logic repository is invariably proliferating! <br><br>
-
-            The set of all corporal manifest, is the the amalgamation of possible  expressions, creations and physiological changes.
-            Mirroring the proliferation of thought, its cardinality is infinite. 
-            eliciting a possible physical manifestation,  should we choose to act on it. <br><br>
-            The set of all internal states, is the amalgamation of all possible states of being; 
-            it is all possible emotional states, all possible physiological states and all possible states of thought.<br><br>
-
-            A pitiful analogy, i'm sure of it, for to define the head in terms of such a system is  heretical. <br><br>
-            -->
-
-            I thank you my sweet, fragile skullflower.  I will wither and wilt and you will be there with me at the very end when our wish to be thawed from mortality is granted, we shall extricate ourselves from our earthly shackles, and become infinite in remembrance. <br><br>
+            I, the vessel of this capricious mind-meat, walk this earth with gratitude in my heart. So I thank you my sweet, fragile skullflower. I will wither and wilt, and you will be there with me at the very end as you have been throughout. When our wish to be thawed from mortality is granted, we shall extricate ourselves from our earthly shackles, and become infinite in remembrance. <br><br>
             </p>
             <div class="bar"></div>
-            <p style="text-align: left;" id="1" >1: I would be glad prove the conditions that make the functions surjective, bijective and bijective respectively, but this is (supposedly) a literary piece. To those without a maths background, ie a large number of people, it wouldn't mean terribly much.  </p>
+            <p style="text-align: left;" id="1">[1] : Just a note on thought generation function. It is not <a href="https://en.wikipedia.org/wiki/Injective_function">injective</a> given that different combinations of sensory inputs and internal state can lead to the same thought. I'm sure you can think of an example for this :)</p>
+            <p style="text-align: left;" id="2" >[2] : This is a piece of literature, and it is written solely with myself in mind. If you would like to understand the maths, this is not the place. There are wikipedia articles linked throughout the text for relevant concepts, should you want to learn more. </p>
             <div class="bar"></div>
         </div>
     

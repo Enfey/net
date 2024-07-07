@@ -144,7 +144,13 @@ img, video{
     }
 
 
-
+    .bar {
+        width: 100%;
+        height: 2px; /* Adjust the height as needed */
+        background-color: #5c5c5c;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
 
 
     
@@ -202,6 +208,7 @@ img, video{
   .section {
     width: 45%;
     margin: 0 auto;
+    text-align: center;
     
     box-sizing: border-box;
     line-height: 1.5;
@@ -220,6 +227,8 @@ img, video{
     font-size: 1em;
     text-decoration: none;
     color: #ac0b0b;
+    padding: 15px;
+    margin: -15px;
   }
 
   .sample-container {
@@ -254,6 +263,7 @@ img, video{
     .sample-container, .item a {
         text-align: center;
     }
+    
 
 
   @media (max-width: 1200px) {
